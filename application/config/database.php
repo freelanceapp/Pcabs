@@ -2,9 +2,9 @@
           $query_builder = TRUE;
 $db["default"] = array("dsn"  => "",
 "hostname" => "localhost", 
-"username" => "root" ,
-"password" => "",
-"database" => "",
+"username" => "ibuyfres_pcab" ,
+"password" => "vEWWZQ8n04eS",
+"database" => "ibuyfres_pcab",
 "dbdriver" => "mysqli",
 "pconnect" => FALSE,
 "db_debug" => (ENVIRONMENT !== "production"),

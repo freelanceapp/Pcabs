@@ -2,7 +2,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> 3.1.1
         </div>
-        <strong>Copyright &copy; 2015-2016 <a href="http://www.techware.co.in/">Techware Solution</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2015-<?php echo date('Y'); ?> <a href="#">Patna Cab Services</a>.</strong> All rights reserved.
       </footer>
 	  <script src="<?php echo base_url();?>assets/adminlte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
       
