@@ -32,7 +32,7 @@ function getLanguageForUserApp(){
 								'Mobile_User_Name_Email' => 'Mobile / User Name / Email',
 								'password' => 'password',								
 							 //Main Landing.html//	
-								'CallMy_Cab' => 'CallMyCab',
+								'CallMy_Cab' => 'pcab',
 								'Enter_Pickup_location' => 'Enter Pickup location',
 								'Enter_Drop_location' => 'Enter Drop location',
 								'Toyota_etios_tata_indigo_maruti_dezire' => 'Toyota etios / tata indigo / maruti dezire',

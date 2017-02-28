@@ -101,7 +101,7 @@
    <!-- Side Bar -->
               <?php
 			 if($row->sidebar=='Vertical'){
-			 include"includes/callmycab_sidebar.php"; }
+			 include"includes/pcab_sidebar.php"; }
 			 ?>
               <!-- End Side Bar  -->
      <div class="jumbotron <?php if($row->sidebar=='Vertical'){ echo "verticalcal";}?>">
@@ -110,10 +110,10 @@
        
      <?php
 	 if($row->sidebar=='Horizontal'){
-			 include "includes/callmycab_horizontal.php"; 
+			 include "includes/pcab_horizontal.php"; 
 			 }
 	  include "includes/farechart.php";
-	 include "includes/callmycab_header.php";
+	 include "includes/pcab_header.php";
 	 ?>
       <!-- Main jumbotron for a primary marketing message or call to action -->
     
@@ -548,7 +548,7 @@ $(document).ready(function() {
 	
 	
 	$.ajax({
-url:'<?php echo base_url();?>callmycab/addpaypal',
+url:'<?php echo base_url();?>pcab/addpaypal',
 type:'post',
 data:{'a':a,'b':b,'c':c},
 success:function(book){

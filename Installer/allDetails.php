@@ -19,7 +19,7 @@ if(($_POST)){
   /*$code = $_POST;
   $result=array('value'=>$code);
   print_r(($result));*/
-  $filename = 'sql/new_callmycab.sql';
+  $filename = 'sql/new_pcab.sql';
   $con = mysqli_connect($db_host,$db_username,$db_password,$db_name) or die('Error connecting to MySQL server');
   // Temporary variable, used to store current query
   $templine = '';

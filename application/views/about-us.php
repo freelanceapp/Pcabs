@@ -55,7 +55,7 @@
    <body class="about-us1">
    <?php
 			 if($row->sidebar=='Vertical'){
-			 include "includes/callmycab_sidebar.php"; }
+			 include "includes/pcab_sidebar.php"; }
 			 ?>
      <div class="jumbotron about-sw <?php if($row->sidebar=='Vertical'){ echo "verticalcal";}?>">
       
@@ -63,9 +63,9 @@
          <div class="bnr">
            <?php
 		    include "includes/farechart.php";
-	 include "includes/callmycab_header.php";
+	 include "includes/pcab_header.php";
 	 if($row->sidebar=='Horizontal'){
-			 include "includes/callmycab_horizontal.php"; }
+			 include "includes/pcab_horizontal.php"; }
 	 
 	 ?>
      
@@ -189,7 +189,7 @@ $(".loader").hide();
 	   var form =$('#myForm').serializeArray();
 	   $.ajax({
 			type:'post',
-            url:'<?php echo base_url();?>callmycab/contact_us_details',
+            url:'<?php echo base_url();?>pcab/contact_us_details',
             dataType: 'json',
             data:form,
 			

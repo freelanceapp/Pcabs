@@ -80,7 +80,7 @@
 		 $('.loader').hide();
 		$.ajax({
 			type: "POST",
-			url:base_url+'callmycab/check_logged_user',
+			url:base_url+'pcab/check_logged_user',
 			cache: false,
 			success: function(data){
 				if(data=='driver')
@@ -103,7 +103,7 @@
 			if ($('#log_sign').parsley().validate() ) {
 				var value =$("#log_sign").serialize() ;
 				$.ajax({
-					url:base_url+'callmycab/userlogin',
+					url:base_url+'pcab/userlogin',
 					type:'post',
 					data:value,
 					success:function(result){
@@ -114,10 +114,10 @@
 						}else{
 							//$('.logout2').html(logout);
 							if(result=="driver"){
-								window.location = base_url+"callmycab/account";
+								window.location = base_url+"pcab/account";
 								}else{
 									$("#error_msg").html('<p class="error">Login success</p>');
-									$('<li id="logged" class="active check_test"><a href="'+base_url+'callmycab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'callmycab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
+									$('<li id="logged" class="active check_test"><a href="'+base_url+'pcab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'pcab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
 									$('#notLogged').hide();
 									setTimeout(function(){$("#error_msg").hide(); $(".cl-mdl").click();}, 1000);
 								} 
@@ -136,7 +136,7 @@ $("#save_details").click(function(){
 
 	$.ajax({
 
-	url:base_url+'callmycab/contact',
+	url:base_url+'pcab/contact',
 
 	type:'post',
 
@@ -178,7 +178,7 @@ $("#callback_button").click(function(){
 
 	$.ajax({
 
-	url:base_url+'callmycab/call_back_func',
+	url:base_url+'pcab/call_back_func',
 
 	type:'post',
 
@@ -217,7 +217,7 @@ $("#callback_button").click(function(){
 			  $('.loader').show();
 			var value =$("#user_reg").serialize() ;
 			$.ajax({
-				url:base_url+'callmycab/sign_up',
+				url:base_url+'pcab/sign_up',
 				type:'post',
 				data:value,
 				success:function(res){
@@ -255,15 +255,15 @@ $("#callback_button").click(function(){
 							if(res=='driver'){
 								$(".test12").html('<p class="success">User Registered Successfully</p>');
 								setTimeout(function(){
-									window.location = base_url+'callmycab/account';
+									window.location = base_url+'pcab/account';
 									}, 3000);
 							}else if(res=='user'){
 								$(".test12").html('<p class="success">User Registered Successfully</p>');
-								$('<li id="logged" class="active check_test"><a href="'+base_url+'callmycab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'callmycab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
+								$('<li id="logged" class="active check_test"><a href="'+base_url+'pcab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'pcab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
 								$('#notLogged').hide();
 							}else if(res==username){
 								$(".test12").html('<p class="success">User Registered Successfully</p>');
-								$('<li id="logged" class="active check_test"><a href="'+base_url+'callmycab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'callmycab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
+								$('<li id="logged" class="active check_test"><a href="'+base_url+'pcab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'pcab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
 								$('#notLogged').hide();
 							}else{
 								$(".test12").html('<p class="success">Error in Submission</p>');
@@ -284,7 +284,7 @@ var value =$("#otp_verification").serialize() ;
 
 $.ajax({
 
-url:base_url+'callmycab/otp_verify',
+url:base_url+'pcab/otp_verify',
 
 type:'post',
 
@@ -306,12 +306,12 @@ setTimeout(function(){$("#error_msgs").hide(); $(".cl-mdl").click();}, 3000);
 $(".test11").html('<p class="success">User Registered Successfully</p>');
  
 setTimeout(function(){ 
-	window.location = base_url+'callmycab/account';
+	window.location = base_url+'pcab/account';
 }, 3000);
 } 
 else{
 	  $(".cl-mdl").click();
-	  $('<li id="logged" class="active check_test"><a href="'+base_url+'callmycab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'callmycab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
+	  $('<li id="logged" class="active check_test"><a href="'+base_url+'pcab/account"><span><img src="'+base_url+'assets/img/home/m-1.png"/> </span><br>'+username+'</a></li><li><a href="'+base_url+'pcab/logout"><span><img src="'+base_url+'assets/img/home/m-5.png"/> </span><br>Logout </a></li>').appendTo('#logged_ul');
  $('#notLogged').hide();
 
 }
@@ -362,7 +362,7 @@ $( ".point_to_point" ).click(function() {
 
 			 $.ajax({	
 			 type: "POST",
-   			url:base_url+'callmycab/fetch_car',
+   			url:base_url+'pcab/fetch_car',
 			data: {type:'Point to Point Transfer',shift:shift,pick_lat:pick_lat,pick_lng:pick_lng,drop_lat:drop_lat,drop_lng:drop_lng},
 			 cache: false,
 		 	 success: function(datas){
@@ -400,7 +400,7 @@ $( ".point_to_point" ).click(function() {
 			 {
 				 $.ajax({
  				 type: "POST",
- 				 url:base_url+'callmycab/check_logged_in',
+ 				 url:base_url+'pcab/check_logged_in',
  				 cache: false,
  				 success: function(data){
  				if(data==0)
@@ -412,7 +412,7 @@ $( ".point_to_point" ).click(function() {
 	 	  	$.ajax({
 
 			 type: "POST",
-    		 url:base_url+'callmycab/book_point',
+    		 url:base_url+'pcab/book_point',
 			 data: {value},
 			 cache: false,
 		 	 success: function(data){
@@ -531,7 +531,7 @@ var bb=$(this).attr('id');
 
 			 type: "POST",
 
-			url:base_url+'callmycab/fetch_car_search',
+			url:base_url+'pcab/fetch_car_search',
 
 			data: {type:'Hourly Rental',shift:shift,pick_lat:pick_lat,pick_lng:pick_lng,hour_package:hour_package},
 
@@ -608,7 +608,7 @@ $.ajax({
 
 			 type: "POST",
 
-			url:base_url+'callmycab/check_logged_in',
+			url:base_url+'pcab/check_logged_in',
 
 			 
 			 cache: false,
@@ -636,7 +636,7 @@ $.ajax({
 
 			 type: "POST",
 
-			url:base_url+'callmycab/book_hourly',
+			url:base_url+'pcab/book_hourly',
 
 			data: {value},
 
@@ -1060,7 +1060,7 @@ $.ajax({
 
 			$.ajax({
 
-				url:base_url+'callmycab/timepicker',
+				url:base_url+'pcab/timepicker',
 
 				 data:{'date' : date},
 
@@ -1096,7 +1096,7 @@ $.ajax({
 
 			$.ajax({
 
-				url:base_url+'callmycab/timepicker',
+				url:base_url+'pcab/timepicker',
 
 				 data:{'date' : date},
 
@@ -1183,7 +1183,7 @@ $("#datepicker2").change(function(){
 
 	$.ajax({
 
-		url:base_url+'callmycab/timepicker',
+		url:base_url+'pcab/timepicker',
 
 		 data:{'date' : date},
 
@@ -1330,7 +1330,7 @@ $('.airport_transfer').on('click',function(){
 
 			type: "POST",
 
-			url:base_url+'callmycab/fetch_distance',
+			url:base_url+'pcab/fetch_distance',
 
 			data: {drop_lng:drop_lng,drop_lat:drop_lat,pick_lat:pick_lat,pick_lng:pick_lng},
 
@@ -1364,7 +1364,7 @@ $('#airport_field').on('change',function(){
 
 			type: "POST",
 
-			url:base_url+'callmycab/fetch_position',
+			url:base_url+'pcab/fetch_position',
 
 			data: {code:value},
 
@@ -1396,7 +1396,7 @@ function fetch_car_result(distance){
 
 			type: "POST",
 
-			url:base_url+'callmycab/fetch_air_car',
+			url:base_url+'pcab/fetch_air_car',
 
 			data: {type:'Airport Transfer',shift:time,distance:distance,select_type:optradio},
 
@@ -1491,7 +1491,7 @@ $('.air_confirm').on('click',function(){
 
 			 type: "POST",
 
-			url:base_url+'callmycab/check_logged_in',
+			url:base_url+'pcab/check_logged_in',
 
 			 
 			 cache: false,
@@ -1529,7 +1529,7 @@ $('.air_confirm').on('click',function(){
 
 			type: "POST",
 
-			url:base_url+'callmycab/airport_book',
+			url:base_url+'pcab/airport_book',
 
 			data: post_data,
 
@@ -1651,7 +1651,7 @@ $('#outstation_field').on('change',function(){
 	var package = $(this).val();
 	$.ajax({
 		type: "POST",
-		url:base_url+'callmycab/get_location',
+		url:base_url+'pcab/get_location',
 		data: {package:package},
 		cache: false,
 		success: function(data){
@@ -1741,7 +1741,7 @@ $('#out_loc').on('click',function(){
 
 		$.ajax({
 			type: "POST",
-			url:base_url+'callmycab/fetch_out_car',
+			url:base_url+'pcab/fetch_out_car',
 			data: {package:package,dep_date:dep_date,ret_date:ret_date},
 			cache: false,
 			success: function(data){
@@ -1834,7 +1834,7 @@ $('.outstation_car').on('click',function(){
 
 			$.ajax({
 
-				url:base_url+'callmycab/timepicker',
+				url:base_url+'pcab/timepicker',
 
 				 data:{'date' : date},
 
@@ -1877,7 +1877,7 @@ $('.out_confirm').on('click',function(){
 
 			 type: "POST",
 
-			url:base_url+'callmycab/check_logged_in',
+			url:base_url+'pcab/check_logged_in',
 
 			 
 			 cache: false,
@@ -1911,7 +1911,7 @@ $('.out_confirm').on('click',function(){
 
 			type: "POST",
 
-			url:base_url+'callmycab/outstation_book',
+			url:base_url+'pcab/outstation_book',
 
 			data: post_data,
 
@@ -1954,7 +1954,7 @@ $('.contact_form_button').on('click',function(){
 	  
 		$.ajax({
 			type: "POST",
-			url:base_url+'callmycab/contact_us_details',
+			url:base_url+'pcab/contact_us_details',
 			data: {value},
 			cache: false,
 			success: function(data){
@@ -1984,7 +1984,7 @@ $('#save_chng_psw').on('click',function(){
 	  
 		$.ajax({
 			type: "POST",
-			url:base_url+'callmycab/change_password',
+			url:base_url+'pcab/change_password',
 			data: {value},
 			cache: false,
 			success: function(data){
@@ -2027,7 +2027,7 @@ $('#save_chng_psw').on('click',function(){
 		 
 			  $.ajax({
 			type: "POST",
-			url:base_url+'callmycab/sort_date',
+			url:base_url+'pcab/sort_date',
 			data: {dates:dates,tab_id:active_tab_id},
 			cache: false,
 			success: function(data){
@@ -2115,7 +2115,7 @@ $('#station_cab').html('');
 
 	$.ajax({
 		type: "POST",
-		url:base_url+'callmycab/fare_details',
+		url:base_url+'pcab/fare_details',
 		data: value,
 		cache: false,
 		success: function(data){
@@ -2167,7 +2167,7 @@ $('#add_money').on('click',function(){
 	//$('.close').click();
 	$.ajax({
 		type: "POST",
-		url:base_url+'callmycab/check_logged_in',
+		url:base_url+'pcab/check_logged_in',
 		cache: false,
 		success: function(data){
 			if(data==0) {
@@ -2228,7 +2228,7 @@ function check_promo(promo_code,fields,promo_field){
 	//alert(fields);
 	$.ajax({
 		type: "POST",
-		url:base_url+'callmycab/promo_verify',
+		url:base_url+'pcab/promo_verify',
 		data: {code:promo_code},
 		cache: false,
 		success: function(data){

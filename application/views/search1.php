@@ -54,7 +54,7 @@ foreach ($query_pag_data->result() as $row) {
                             <div class="col-md-5">
                             
                             <div class="bkng_hd_icon"> <a href="#"> <img src="<?php echo base_url();?>assets/images/track.png" alt="">  Track </a> </div>
-                            <!--div class="bkng_hd_icon"> <a href="<?php echo base_url();?>callmycab/edit_booking?id=<?php echo $row->id; ?>"><img src="<?php echo base_url();?>assets/images/edit.png" alt=""> Edit </a> </div-->
+                            <!--div class="bkng_hd_icon"> <a href="<?php echo base_url();?>pcab/edit_booking?id=<?php echo $row->id; ?>"><img src="<?php echo base_url();?>assets/images/edit.png" alt=""> Edit </a> </div-->
                             <div class="bkng_hd_icon"> <a href="#" class="cancel"  title="<?php echo $row->id;?>" ><img src="<?php echo base_url();?>assets/images/cancel.png" alt=""> Cancel </a> </div>
                             </div>
                             <?php }
@@ -184,7 +184,7 @@ $('.cancel').click(function(){
 	var status = "Cancelled";
 	
 $.ajax({
-url:'<?php echo base_url();?>callmycab/cancel',
+url:'<?php echo base_url();?>pcab/cancel',
 type:'post',
 data:{'id':id,'status':status},
 success:function(cancel){

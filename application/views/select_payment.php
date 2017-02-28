@@ -204,10 +204,10 @@ data-parsley-minlength="3"  data-parsley-type="digits" requred="">
                     <input type='hidden' name='no_shipping' value='1'>
                     <input type='hidden' name='currency_code' value='USD'>
                     <input type='hidden' name='handling' value='0'>
-                    <input type='hidden' name='cancel_return' value='<?php echo base_url();?>callmycab/cancel_paypal?id=<?php echo $id;?>'>
-                    <input type='hidden' name='return' value='<?php echo base_url();?>callmycab/result_paypal'>
+                    <input type='hidden' name='cancel_return' value='<?php echo base_url();?>pcab/cancel_paypal?id=<?php echo $id;?>'>
+                    <input type='hidden' name='return' value='<?php echo base_url();?>pcab/result_paypal'>
 
-    <input type="hidden" name="notify_url" value="<?php echo base_url();?>callmycab/result_paypal">
+    <input type="hidden" name="notify_url" value="<?php echo base_url();?>pcab/result_paypal">
 <input type='hidden' name='rm' value='2'>
                     <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
@@ -269,7 +269,7 @@ $("#point").hide()
 
 
 if( !amount1 || amount1=="0"){
-window.location.replace("<?php echo base_url();?>callmycab/cancel_paypal?id="+id);
+window.location.replace("<?php echo base_url();?>pcab/cancel_paypal?id="+id);
 
 }else{
 	
@@ -352,7 +352,7 @@ $('.paypals').submit();
 	
 	
 	$.ajax({
-url:'<?php echo base_url();?>callmycab/addpaypal',
+url:'<?php echo base_url();?>pcab/addpaypal',
 type:'post',
 data:{'a':a,'b':b,'c':c},
 success:function(book){

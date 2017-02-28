@@ -21,7 +21,7 @@
                             <div class="col-md-5">
                             
                             <div class="bkng_hd_icon"> <a href="#"> <img src="<?php echo base_url();?>assets/images/track.png" alt="">  Track </a> </div>
-                            <div class="bkng_hd_icon"> <a href="<?php if($row1['status']=='Booking'){?><?php echo base_url();?>index.php/callmycab/edit_booking?id=<?php echo $row1['id']; }?>"><img src="<?php echo base_url();?>assets/images/edit.png" alt=""> Edit </a> </div>
+                            <div class="bkng_hd_icon"> <a href="<?php if($row1['status']=='Booking'){?><?php echo base_url();?>index.php/pcab/edit_booking?id=<?php echo $row1['id']; }?>"><img src="<?php echo base_url();?>assets/images/edit.png" alt=""> Edit </a> </div>
                             <div class="bkng_hd_icon"> <a href="#" class="cancel"  title="<?php echo $row1['id'];?>" ><img src="<?php echo base_url();?>assets/images/cancel.png" alt=""> Cancel </a> </div>
                             </div>
                             <?php }
@@ -59,17 +59,17 @@
                     <nav>
   <ul class="pagination">
     <li>
-      <a href="<?php echo base_url();?>callmycab/account?page=1" aria-label="Previous">
+      <a href="<?php echo base_url();?>pcab/account?page=1" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
     </li>
   <?php  for ($i=1; $i<=$total_pages; $i++) { ?>
-    <li><a href="<?php echo base_url();?>callmycab/account?page=<?php echo $i;?>"><?php echo $i;?></a></li>
+    <li><a href="<?php echo base_url();?>pcab/account?page=<?php echo $i;?>"><?php echo $i;?></a></li>
   <?php
   }
   ?>
     <li>
-      <a href="<?php echo base_url();?>callmycab/account?page=<?php echo $total_pages ; ?>" aria-label="Next">
+      <a href="<?php echo base_url();?>pcab/account?page=<?php echo $total_pages ; ?>" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>

@@ -348,7 +348,7 @@ class web_service extends CI_Controller
 		print json_encode($result[0]);
 	}
 	
-	/*Shajeer Callmycab driver app starts here*/
+	/*Shajeer pcab driver app starts here*/
     public function driver_login(){
 		$postdata = file_get_contents("php://input");
     	$request = json_decode($postdata);
@@ -630,5 +630,5 @@ class web_service extends CI_Controller
 		}
 
 
-    /*Shajeer Callmycab driver app ends here*/
+    /*Shajeer pcab driver app ends here*/
 }			

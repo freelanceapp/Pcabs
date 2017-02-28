@@ -390,7 +390,7 @@ $(document).ready(function () {
 	   $("#datepickerp").change(function(){
 		 	var date = $(this).val();
 			$.ajax({
-			url:'<?php echo base_url();?>callmycab/timepickera',
+			url:'<?php echo base_url();?>pcab/timepickera',
 			data:{'date' : date},
 			type:'post',
 			success:function(result){ 

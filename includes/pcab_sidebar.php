@@ -23,7 +23,7 @@
 		}
 						if(!empty($value)){
 						?>
-                              <li ><a href="<?php echo base_url();?>callmycab/account" class="icon-login sess-login"><?php echo $value; ?> </a></li>
+                              <li ><a href="<?php echo base_url();?>pcab/account" class="icon-login sess-login"><?php echo $value; ?> </a></li>
                         <?php
 						}else{?>
               <nav class="main-nav">
@@ -34,7 +34,7 @@
 						?>
               <li><a href="#" class="icon-callback" data-toggle="modal" data-target="#newModals"><?php echo $callbacks; ?></a></li>
               <li><a href="javascript:void(0);" class="icon-freechart parafair" data-toggle="modal" data-target="#myModal"><?php echo $fare_charts; ?></a></li>
-              <li><a href="<?php echo base_url();?>callmycab/page_index/about_us" class="icon-about"><?php echo $abouts; ?></a></li>
-              <li><a href="<?php echo base_url();?>callmycab/page_index/contact_us" class="icon-contact"><?php echo $contacts; ?></a></li>
+              <li><a href="<?php echo base_url();?>pcab/page_index/about_us" class="icon-about"><?php echo $abouts; ?></a></li>
+              <li><a href="<?php echo base_url();?>pcab/page_index/contact_us" class="icon-contact"><?php echo $contacts; ?></a></li>
               </ul>
 			  

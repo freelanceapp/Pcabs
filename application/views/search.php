@@ -16,7 +16,7 @@
                             <div class="col-md-5">
                             
                             <div class="bkng_hd_icon"> <a href="#"> <img src="<?php echo base_url();?>assets/images/track.png" alt="">  Track </a> </div>
-                            <div class="bkng_hd_icon"> <a href="<?php if($row1->status=='Booking'){?><?php echo base_url();?>callmycab/edit_booking?id=<?php echo $row1->id; }?>"><img src="<?php echo base_url();?>assets/images/edit.png" alt=""> Edit </a> </div>
+                            <div class="bkng_hd_icon"> <a href="<?php if($row1->status=='Booking'){?><?php echo base_url();?>pcab/edit_booking?id=<?php echo $row1->id; }?>"><img src="<?php echo base_url();?>assets/images/edit.png" alt=""> Edit </a> </div>
                             <div class="bkng_hd_icon"> <a href="javascript:void(0);" class="cancel"  title="<?php echo $row1->id;?>" ><img src="<?php echo base_url();?>assets/images/cancel.png" alt=""> Cancel </a> </div>
                             </div>
                             <?php }

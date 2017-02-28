@@ -62,15 +62,15 @@ $get_settings=getsettingsdetails();
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav nav-head nav-call" id="logged_ul">
-                        <li class="active"><a href="<?php echo base_url();?>callmycab/about"><span><img src="<?php echo base_url();?>assets/img/home/m-1.png"/> </span><br><?php echo $lang_about_us; ?></a></li>
+                        <li class="active"><a href="<?php echo base_url();?>pcab/about"><span><img src="<?php echo base_url();?>assets/img/home/m-1.png"/> </span><br><?php echo $lang_about_us; ?></a></li>
                         <li><a href="#" data-toggle="modal" data-target="#myModalcall"><span><img src="<?php echo base_url();?>assets/img/home/m-2.png"/> </span><br><?php echo $lang_callback; ?></a></li>
                         <li><a href="#" data-toggle="modal" data-target="#myModalf"><span><img src="<?php echo base_url();?>assets/img/home/m-3.png"/> </span><br><?php echo $lang_fare_chart; ?> </a></li>
-                        <li><a href="<?php echo base_url();?>callmycab/contact_us"><span><img src="<?php echo base_url();?>assets/img/home/m-4.png"/> </span><br><?php echo $lang_contact; ?> </a></li>
+                        <li><a href="<?php echo base_url();?>pcab/contact_us"><span><img src="<?php echo base_url();?>assets/img/home/m-4.png"/> </span><br><?php echo $lang_contact; ?> </a></li>
 						<?php if(!$user_data){?>
 						 <li id="notLogged"><a href="#" id="log_sect" class="login_now"><span><img src="<?php echo base_url();?>assets/img/home/m-5.png"/> </span><br><?php echo $lang_login_signp; ?> </a></li>
                        	<?php }else{?>
-						  <li id="logged" class="active check_test"><a href="<?php echo base_url();?>callmycab/account"><span><img src="<?php echo base_url();?>assets/img/home/m-1.png"/> </span><br><?php echo $user_data->username; ?></a></li>
-					      <li><a href="<?php echo base_url();?>callmycab/logout"  ><span><img src="<?php echo base_url();?>assets/img/home/m-5.png"/> </span><br><?php echo $lang_logout; ?> </a></li>
+						  <li id="logged" class="active check_test"><a href="<?php echo base_url();?>pcab/account"><span><img src="<?php echo base_url();?>assets/img/home/m-1.png"/> </span><br><?php echo $user_data->username; ?></a></li>
+					      <li><a href="<?php echo base_url();?>pcab/logout"  ><span><img src="<?php echo base_url();?>assets/img/home/m-5.png"/> </span><br><?php echo $lang_logout; ?> </a></li>
 						  <?php }?>
                     </ul>
                 </div>
@@ -425,7 +425,7 @@ $get_settings=getsettingsdetails();
 									 <button type="button" class="btn btn-default btn-snd-callback signup_logg" value="Login" > <?php echo $lang_login; ?></button>
                                 </div>
                                 <div class="sign-req">
-                                 <h4><?php echo $lang_new_callmycab; ?>?<span><a href="javascript:void(0)" class="signup_now" id="signup_modal" > <?php echo $lang_signup_now; ?></a></span></h4>
+                                 <h4><?php echo $lang_new_pcab; ?>?<span><a href="javascript:void(0)" class="signup_now" id="signup_modal" > <?php echo $lang_signup_now; ?></a></span></h4>
                                 </div>
 
                             </form>

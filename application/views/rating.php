@@ -64,7 +64,7 @@
          <div class="bnr">
            <?php
 		    include "includes/farechart.php";
-	 include "includes/callmycab_header.php";
+	 include "includes/pcab_header.php";
 	 if($row->sidebar=='Horizontal'){
 			 }
 	 
@@ -163,7 +163,7 @@ $(".loader").hide();
 	   var form =$('#myForm').serializeArray();
 	   $.ajax({
 			type:'post',
-            url:'<?php echo base_url();?>callmycab/contact_us_details',
+            url:'<?php echo base_url();?>pcab/contact_us_details',
             dataType: 'json',
             data:form,
 			

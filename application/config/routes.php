@@ -38,8 +38,8 @@
 |
 */
 
-$route['default_controller'] = "callmycab";
-$route['404_override'] = 'callmycab/show_404';
+$route['default_controller'] = "pcab";
+$route['404_override'] = 'pcab/show_404';
 
 
 /* End of file routes.php */

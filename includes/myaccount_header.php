@@ -96,7 +96,7 @@ if(!confirmpass){
 		return false;
 }
 $.ajax({
-url:'<?php echo base_url();?>callmycab/changepassword',
+url:'<?php echo base_url();?>pcab/changepassword',
 type:'post',
 data:{'current':current,'newpass':newpass,'confirmpass':confirmpass},
 success:function(password){

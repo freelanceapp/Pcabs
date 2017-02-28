@@ -193,7 +193,7 @@ var value =$("#log").serialize() ;
 
 
 $.ajax({
-url:'<?php echo base_url();?>callmycab/userlogin',
+url:'<?php echo base_url();?>pcab/userlogin',
 type:'post',
 data:value,
 success:function(result){
@@ -208,10 +208,10 @@ setTimeout(function(){$(".test2").hide(); }, 3000);
 else{
 	//$('.logout2').html(logout);
 	if(result=="driver"){
-	window.location = "<?php echo base_url();?>callmycab/account";
+	window.location = "<?php echo base_url();?>pcab/account";
 	}else{
 		$(".sess-login1").text(result);
-$(".sess-login11").attr("href", "<?php echo base_url();?>callmycab/account");
+$(".sess-login11").attr("href", "<?php echo base_url();?>pcab/account");
 //$('.sess-login').html(result);
 $(".promo-text").text("");
 $(".test2").html('<p class="success">Login successfully</p>');
@@ -359,7 +359,7 @@ var value =$("#user_reg").serialize() ;
 
 
 $.ajax({
-url:'<?php echo base_url();?>callmycab/testajax',
+url:'<?php echo base_url();?>pcab/testajax',
 type:'post',
 data:value,
 success:function(res){
@@ -393,7 +393,7 @@ $('#cd-signup').hide();
 $(".promo-text").text("");
 }else{
 if(res=='driver'){
-	window.location = "<?php echo base_url();?>callmycab/account";
+	window.location = "<?php echo base_url();?>pcab/account";
 }else{	
 $(".test11").html('<p class="success">User Registered Successfully</p>');
 setTimeout(function(){$(".test11").hide(); }, 3000);
@@ -405,7 +405,7 @@ setTimeout(function(){$(".cd-user-modal").animate({
         }); }, 1500); 
 
 $(".sess-login1").text(res);
-$(".sess-login11").attr("href", "<?php echo base_url();?>callmycab/account");
+$(".sess-login11").attr("href", "<?php echo base_url();?>pcab/account");
 }
 }
 
@@ -424,7 +424,7 @@ var username = $('#otp-user').val() ;
  }
    
 $.ajax({
-url:'<?php echo base_url();?>callmycab/otp_verify',
+url:'<?php echo base_url();?>pcab/otp_verify',
 type:'post',
 data:{'username':username,'active_id':active_id,'communictn':communictn},
 success:function(res){
@@ -441,7 +441,7 @@ setTimeout(function(){$(".sms-code").hide(); }, 3000);
 	if(res=='driver'){
 		$(".sms-code").html('<p class="success">Valid Code</p>');
 setTimeout(function(){$(".sms-code").hide(); }, 3000);
-	window.location = "<?php echo base_url();?>callmycab/account";
+	window.location = "<?php echo base_url();?>pcab/account";
 }else{
 $(".sms-code").html('<p class="success">Valid Code</p>');
 setTimeout(function(){$(".sms-code").hide(); }, 3000);
@@ -453,7 +453,7 @@ setTimeout(function(){$(".cd-user-modal").animate({
         }); }, 1500);
 $('body').css("overflow-Y","scroll");
 $(".sess-login1").text(res);
-$(".sess-login11").attr("href", "<?php echo base_url();?>callmycab/account");
+$(".sess-login11").attr("href", "<?php echo base_url();?>pcab/account");
 }
 
 
@@ -468,7 +468,7 @@ $(".sess-login11").attr("href", "<?php echo base_url();?>callmycab/account");
 var username = $('#otp-user').val() ;
   
 $.ajax({
-url:'<?php echo base_url();?>callmycab/resend_otp',
+url:'<?php echo base_url();?>pcab/resend_otp',
 type:'post',
 data:{'username':username},
 success:function(res){
@@ -501,7 +501,7 @@ if ($('.fogot_form').parsley().validate() ) {
  }
  var type=$('input:radio[name=user_types]:checked').val();
  $.ajax({
-url:'<?php echo base_url();?>callmycab/reset_email',
+url:'<?php echo base_url();?>pcab/reset_email',
 type:'post',
 data:{'email':email,'communictn':communictn,'type':type},
 success:function(res){

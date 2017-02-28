@@ -35,7 +35,7 @@ $pickadd = $_POST['pickup_address'];
                                         <h5>Your BOOKING ID is </h5>
                                          <h4><?php echo $s;?></h4>
                                        
-                                        <!--a class="modify-booking" href="<?php echo base_url();?>callmycab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
+                                        <!--a class="modify-booking" href="<?php echo base_url();?>pcab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
                                         </div>
 
 	                        </div>
@@ -161,7 +161,7 @@ $flight = $_POST['flight_number'];
                                         <div class="ccid"><!--p class="parabooking">We'll notify you, As soon as we find a cab.</p-->
                                         <h5>Your BOOKING ID is </h5>
                                          <h4><?php echo $s;?></h4>
-                                        <!--a class="modify-booking" href="<?php echo base_url();?>callmycab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
+                                        <!--a class="modify-booking" href="<?php echo base_url();?>pcab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
                                         </div>
 
 	                        </div>
@@ -305,7 +305,7 @@ $package = $_POST['package'];
                                         <div class="ccid"><!--p class="parabooking">We'll notify you, As soon as we find a cab.</p-->
                                         <h5>Your BOOKING ID is </h5>
                                          <h4><?php echo $s;?></h4>
-                                      <!--a class="modify-booking" href="<?php echo base_url();?>callmycab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
+                                      <!--a class="modify-booking" href="<?php echo base_url();?>pcab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
                                         </div>
 
 	                        </div>
@@ -430,7 +430,7 @@ $pickadd = $_POST['pickup_address'];
                                         <div class="ccid"><!--p class="parabooking">We'll notify you, As soon as we find a cab.</p-->
                                         <h5>Your BOOKING ID is </h5>
                                          <h4><?php echo $s;?></h4>
-                                         <!--a class="modify-booking" href="<?php echo base_url();?>callmycab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
+                                         <!--a class="modify-booking" href="<?php echo base_url();?>pcab/edit_booking?id=<?php echo $id;?>">(Modify booking)</a-->
                                         </div>
 
 	                        </div>

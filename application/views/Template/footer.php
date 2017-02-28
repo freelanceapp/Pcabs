@@ -81,7 +81,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4">
                 <div class="copy-right">
-                    <h6>© 2015 <?php echo $lang_callmycab_pvtltd; ?> </h6>
+                    <h6>© 2015 <?php echo $lang_pcab_pvtltd; ?> </h6>
                 </div>
             </div>
             <div class="col-lg-8">

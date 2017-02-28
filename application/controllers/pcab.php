@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Callmycab extends CI_Controller
+class pcab extends CI_Controller
 {
 
 	public function __construct(){
@@ -52,7 +52,7 @@ class Callmycab extends CI_Controller
 		redirect('installer');
 	}
 	$template['page_title'] = "Home";
-	$template['page_name'] = "callmycab_home";
+	$template['page_name'] = "pcab_home";
 	$airports = get_airports();
 	$stations = get_stations();
 	$cab_details = get_cab_info();
@@ -300,7 +300,7 @@ echo $book;
 	$template['page_title'] = "Myaccount";
 	$template['page_name'] = "myaccount";
 		
-	 $config['base_url'] = base_url()."callmycab/account";
+	 $config['base_url'] = base_url()."pcab/account";
      $config["total_rows"] = $this->Model_cab->record_count();
 
     $config['per_page'] = 4;
@@ -380,7 +380,7 @@ echo $cancel;
 	if($data){
 		   $this->session->set_userdata('status_date',json_encode($data));
 	}
-$config['base_url'] = base_url()."callmycab/search1";
+$config['base_url'] = base_url()."pcab/search1";
 $config["total_rows"] = $this->Model_cab->record_count1();
 $config['per_page'] = 4;
 $config["uri_segment"] = 3;
@@ -525,7 +525,7 @@ $result = $this->db->get('bookingdetails');
 
     $items_per_page =4;
     $this->load->library('pagination');
-    $config['base_url'] =base_url()."callmycab/account";
+    $config['base_url'] =base_url()."pcab/account";
     $config['total_rows'] = $result->num_rows;
     $config['per_page'] = $items_per_page;
     $this->pagination->initialize($config);
@@ -586,7 +586,7 @@ echo $otp;
 		  if($data['num']>0){
 		  $this->load->view('about-us',$data);	
 		  }else{
-           redirect('callmycab/404');
+           redirect('pcab/404');
 		  }		  
 	}
 	

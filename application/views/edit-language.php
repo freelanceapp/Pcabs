@@ -471,7 +471,7 @@
                                         </div>
 										 <div class="form-group">
                                             <label>New to Call My Cab</label>
-                                           <input class="form-control regcom" placeholder="New to Call My Cab" name="lang_new_callmycab" value="<?php echo $lang_new_callmycab; ?>" type="text" >
+                                           <input class="form-control regcom" placeholder="New to Call My Cab" name="lang_new_pcab" value="<?php echo $lang_new_pcab; ?>" type="text" >
                                         </div>
 										 <div class="form-group">
                                             <label>Signup Now</label>
@@ -575,8 +575,8 @@
                                            <input class="form-control regcom" placeholder="Sitemap Fares" name="lang_sitemap_fares" value="<?php echo $lang_sitemap_fares; ?>" type="text" >
                                         </div>
 										<div class="form-group">
-                                            <label>Callmycab Pvt. Ltd Privacy Policy Terms of Service</label>
-                                           <input class="form-control regcom" placeholder="Callmycab Pvt. Ltd Privacy Policy Terms of Service" name="lang_callmycab_pvtltd" value="<?php echo $lang_callmycab_pvtltd; ?>" type="text" >
+                                            <label>pcab Pvt. Ltd Privacy Policy Terms of Service</label>
+                                           <input class="form-control regcom" placeholder="pcab Pvt. Ltd Privacy Policy Terms of Service" name="lang_pcab_pvtltd" value="<?php echo $lang_pcab_pvtltd; ?>" type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Are you Serious</label>

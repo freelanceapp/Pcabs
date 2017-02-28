@@ -38,7 +38,7 @@
 		?>
 		
             
-			<li><a href="<?php echo base_url();?>callmycab/account" >
+			<li><a href="<?php echo base_url();?>pcab/account" >
 				<span class="menu-image1"><img src="<?php echo base_url();?>assets/images/menu-icon1.png"></span>
 				<span class="sess-login"><?php echo $value; ?> </span>
 			</a></li>
@@ -61,11 +61,11 @@
 				<span class="menu-image3"><img src="<?php echo base_url();?>assets/images/menu-icon5.png"></span>
 				<span><?php echo $fare_charts; ?></span>
 			</a></li>
-			<li><a href="<?php echo base_url();?>callmycab/page_index/about_us">
+			<li><a href="<?php echo base_url();?>pcab/page_index/about_us">
 				<span class="menu-image3"><img src="<?php echo base_url();?>assets/images/menu-icon3.png"></span>
 				<span><?php echo $abouts; ?></span>
 			</a></li>
-            <li><a class="bordernone" href="<?php echo base_url();?>callmycab/page_index/contact_us">
+            <li><a class="bordernone" href="<?php echo base_url();?>pcab/page_index/contact_us">
 				<span class="menu-image5"><img src="<?php echo base_url();?>assets/images/menu-icon4.png"></span>
 				<span><?php echo $contacts; ?></span>
 			</a></li>

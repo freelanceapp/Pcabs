@@ -143,14 +143,14 @@ ga('send', 'pageview');
    <body onLoad="initialize()">
   <?php
 			 if($row->sidebar=='Vertical'){
-			 include "includes/callmycab_sidebar.php"; }
+			 include "includes/pcab_sidebar.php"; }
 			 ?>
      <div class="jumbotron <?php if($row->sidebar=='Vertical'){ echo "verticalcal";}?>">
           
     <div class="bnr">
      <?php
 	 if($row->sidebar=='Horizontal'){
-			 include "includes/callmycab_horizontal.php"; }
+			 include "includes/pcab_horizontal.php"; }
 	 include "includes/farechart.php";
 	 include"includes/myaccount_header.php";
 	 $textFile= $row->languages;
@@ -1122,7 +1122,7 @@ ga('send', 'pageview');
       </div>
       
      <?php
-	 include "includes/callmycab_footer.php";
+	 include "includes/pcab_footer.php";
 	 ?>
       
       
@@ -1161,7 +1161,7 @@ $(document).ready(function () {
 	    $(".datepicker").change(function(){
 		    var date = $(this).val();
 			$.ajax({
-			   url:'<?php echo base_url();?>callmycab/timepicker',
+			   url:'<?php echo base_url();?>pcab/timepicker',
 			   data:{'date' : date},
 			   type:'post',
 			   success:function(result){
@@ -1176,7 +1176,7 @@ $(document).ready(function () {
         $("#dateh").change(function(){
 			var date = $(this).val();
 			$.ajax({
-			   url:'<?php echo base_url();?>callmycab/timepicker1',
+			   url:'<?php echo base_url();?>pcab/timepicker1',
 			   data:{'date' : date},
 			   type:'post',
 			   success:function(result){
@@ -1191,7 +1191,7 @@ $(document).ready(function () {
 		$("#pickdate1").change(function(){
 			var date = $(this).val();
 			$.ajax({
-			   url:'<?php echo base_url();?>callmycab/timepicker2',
+			   url:'<?php echo base_url();?>pcab/timepicker2',
 			   data:{'date' : date},
 			   type:'post',
 			   success:function(result){
@@ -1205,7 +1205,7 @@ $(document).ready(function () {
         $("#pickdate2").change(function(){
 		    var date = $(this).val();
 			$.ajax({
-			   url:'<?php echo base_url();?>callmycab/timepicker3',
+			   url:'<?php echo base_url();?>pcab/timepicker3',
 			   data:{'date' : date},
 			   type:'post',
 			   success:function(result){
@@ -1729,7 +1729,7 @@ $(document).ready(function(){
             else{
 	
 				$.ajax({
-					url:'<?php echo base_url();?>callmycab/promo',
+					url:'<?php echo base_url();?>pcab/promo',
 					type:'post',
 					data:{'promocode':code},
 					success:function(book){
@@ -1759,7 +1759,7 @@ $(document).ready(function(){
   	              var pickupadd = $("#pickupadd").val();
 		
 					$.ajax({
-						url:'<?php echo base_url();?>callmycab/address',
+						url:'<?php echo base_url();?>pcab/address',
 						type:'post',
 						data:{'pickupadd':pickupadd},
 						success:function(book){
@@ -1788,7 +1788,7 @@ $(document).ready(function(){
 			var km=$('#distance_place').val();
 			var timetype = $('#day_night').val();
 			$.ajax({
-				url:'<?php echo base_url();?>callmycab/update_booking',
+				url:'<?php echo base_url();?>pcab/update_booking',
 				type:'post',
 				data:{'timetype':timetype,'km':km,'pickup_area':pickup_area,'pickup_date':pickup_date,'drop_area':drop_area,'pickup_time':pickup_time,'area':area,'landmark':landmark,'pickup_address':pickup_address,'id':id,'taxi_type':taxi_type,'purpose':purpose,'promo_code':promo_code},
 				success:function(book1){
@@ -1813,7 +1813,7 @@ $(document).ready(function(){
 			else{
 				
 				$.ajax({
-					url:'<?php echo base_url();?>callmycab/promo',
+					url:'<?php echo base_url();?>pcab/promo',
 					type:'post',
 					data:{'promocode':code},
 					success:function(book){
@@ -1851,7 +1851,7 @@ $(document).ready(function(){
 		           var pickupadd = $("#aaddress").val();
 		
 					$.ajax({
-						url:'<?php echo base_url();?>callmycab/address',
+						url:'<?php echo base_url();?>pcab/address',
 						type:'post',
 						data:{'pickupadd':pickupadd},
 						success:function(book){
@@ -1891,7 +1891,7 @@ $(document).ready(function(){
 			var km=$('#distance_place').val();
 			var timetype = $('#day_night').val();
 			$.ajax({
-				url:'<?php echo base_url();?>callmycab/update_booking',
+				url:'<?php echo base_url();?>pcab/update_booking',
 				type:'post',
 				data:{'timetype':timetype,'km':km,'pickup_area':pickup_area,'pickup_date':pickup_date,'drop_area':drop_area,'pickup_time':pickup_time,'area':area,'flight_number':flight_number,'taxi_type':taxi_type,'transfer':transfer,'id':id,'purpose':purpose,'pickup_address':pickup_address,'promo_code':promo_code},
 
@@ -1919,7 +1919,7 @@ $(document).ready(function(){
 			else{
 				
 				$.ajax({
-					url:'<?php echo base_url();?>callmycab/promo',
+					url:'<?php echo base_url();?>pcab/promo',
 					type:'post',
 					data:{'promocode':code},
 					success:function(book){
@@ -1953,7 +1953,7 @@ $(document).ready(function(){
 					var pickupadd = $("#pickaddh").val();
 					
 					$.ajax({
-						url:'<?php echo base_url();?>callmycab/address',
+						url:'<?php echo base_url();?>pcab/address',
 						type:'post',
 						data:{'pickupadd':pickupadd},
 						success:function(book){
@@ -1983,7 +1983,7 @@ $(document).ready(function(){
 			var promo_code = $("#hiddentext-hourly").val() ;
 			var timetype = $('#day_night').val();
 			$.ajax({
-				url:'<?php echo base_url();?>callmycab/update_booking',
+				url:'<?php echo base_url();?>pcab/update_booking',
 				type:'post',
 				data:{'timetype':timetype,'package':package,'pickup_area':pickup_area,'pickup_date':pickup_date,'pickup_time':pickup_time,'area':area,'landmark':landmark,'pickup_address':pickup_address,'id':id,'taxi_type':taxi_type,'purpose':purpose,'promo_code':promo_code},
 
@@ -2012,7 +2012,7 @@ $(document).ready(function(){
 			else{
 				
 				$.ajax({
-					url:'<?php echo base_url();?>callmycab/promo',
+					url:'<?php echo base_url();?>pcab/promo',
 					type:'post',
 					data:{'promocode':code},
 					success:function(book){
@@ -2048,7 +2048,7 @@ $(document).ready(function(){
 					var pickupadd = $("#oaddress").val();
 					
 					$.ajax({
-						url:'<?php echo base_url();?>callmycab/address',
+						url:'<?php echo base_url();?>pcab/address',
 						type:'post',
 						data:{'pickupadd':pickupadd},
 						success:function(book){
@@ -2094,7 +2094,7 @@ $(document).ready(function(){
 			var timetype = $('#day_night').val();
 
 			$.ajax({
-				url:'<?php echo base_url();?>callmycab/update_booking',
+				url:'<?php echo base_url();?>pcab/update_booking',
 				type:'post',
 				data
 				:{'timetype':timetype,'pickup_date':pickup_date,'drop_area':drop_area,'return_date':return_date,'area':area,'landmark':landmark,'pickup_address':pickup_address,'pickup_time':pickup_time,'taxi_type':taxi_type,'id':id,'transfer':transfer,'purpose':purpose,'promo_code':promo_code},

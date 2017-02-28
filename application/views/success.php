@@ -83,7 +83,7 @@
 
                               <h5>Mobile App</h5>
 
-                              <a href="https://play.google.com/store/apps/details?id=com.techware.callMyCab" target="blank">Download </a>
+                              <a href="https://play.google.com/store/apps/details?id=com.techware.pcab" target="blank">Download </a>
 
                           </div>
 

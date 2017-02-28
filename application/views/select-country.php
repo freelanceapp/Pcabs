@@ -101,7 +101,7 @@ data:value,
 success:function(res){
 	if(res=='0'){
 		//$(".test2").html('<p class="success">site url: <a href="<?php echo base_url();?>" target="_blank"><?php echo base_url();?></a><br><br>admin url : <a href="<?php echo base_url();?>/admin" target="_blank"><?php echo base_url();?>/admin</a><br><br>Username: admin,Password:admin</p>');
-		 window.location.href ='callmycab/first_show';
+		 window.location.href ='pcab/first_show';
 	}else{
 		$(".test2").html('<p class="success">Error</p>');
 	}

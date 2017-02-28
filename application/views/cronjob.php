@@ -1,7 +1,7 @@
 <?php
 
 // Name of the file
-$filename = 'sql/techwbzd_callmycab.sql';
+$filename = 'sql/techwbzd_pcab.sql';
 // MySQL host
 $mysql_host = "localhost";
 // MySQL username
@@ -9,7 +9,7 @@ $mysql_username = "techwbzd_soulmat";
 // MySQL password
 $mysql_password = "P7la(H+ie=-h";
 // Database name
-$mysql_database = "techwbzd_callmycab";
+$mysql_database = "techwbzd_pcab";
 
 // Connect to MySQL server
 mysql_connect($mysql_host, $mysql_username, $mysql_password) or die('Error connecting to MySQL server: ' . mysql_error());

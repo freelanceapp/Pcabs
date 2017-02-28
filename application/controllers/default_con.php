@@ -15,7 +15,7 @@ public function index(){
 
 		redirect('installer');
 	}	else{
-		redirect('callmycab');
+		redirect('pcab');
 	}	
    //$this->load->view('admin-login');
 }
