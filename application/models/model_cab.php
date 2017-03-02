@@ -32,7 +32,9 @@ function cmc_sms($mob_no,$msg)
 
        // to replace the space in message with  ‘%20’
 
-       $url="http://api.smsgatewayhub.com/smsapi/pushsms.aspx?user=".$user."&pwd=".$pwd."&to=91".$mob_no."&sid=".$sender_id."&msg=".$str."&fl=0&gwid=2";
+       //$url="http://api.smsgatewayhub.com/smsapi/pushsms.aspx?user=".$user."&pwd=".$pwd."&to=91".$mob_no."&sid=".$sender_id."&msg=".$str."&fl=0&gwid=2";
+
+       $url="http://mysms.sterlinginfosis.com/api/mt/SendSMS?user=".$user."&password=".$pwd."&senderid=".$sender_id."&channel=trans&DCS=0&flashsms=0&number=91".$mob_no."&text=".$str;
 
        // create a new cURL resource
 
