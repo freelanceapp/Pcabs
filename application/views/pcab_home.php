@@ -14,7 +14,7 @@ $get_settings=getsettingsdetails();
                                 <div class="serious-text">
                                     <h3><?php echo $lang_are_serious; ?>?</h3>
                                     <h4><?php echo $lang_taxi_just; ?><br>
-                                        <span>25₹?</span></h4>
+                                        <span>49?</span></h4>
                                 </div>
                             </div>
 
@@ -101,7 +101,7 @@ $get_settings=getsettingsdetails();
                 <div class="col-lg-6 call-right">
                     <img src="<?php echo base_url();?>assets/img/home/t-1.png" class="img-t hvr-grow" />
                     <h3><?php echo $lang_available_24; ?></h3>
-                    <h2>91-35-91-35-91</h2>
+                    <h2>800 666 7777</h2>
                     <p><?php echo $lang_callus_24_content; ?>.</p>
 
                 </div>
@@ -126,29 +126,36 @@ $get_settings=getsettingsdetails();
                         <img src="<?php echo base_url();?>assets/img/home/p-1.png"/>
                         <h4><?php echo $lang_get_mobile; ?>.</h4>
                         <form>
-                            <span id="link_mess"></span>
                             <div class="form-group col-lg-6" style="padding: 0;">
-                                <input type="mobile" class="form-control" id="phone" required="required">
-                                <button type="submit" class="btn btn-default but-sub" id="get_phone_link"><?php echo $lang_send_link; ?></button>
+                                <input type="text" class="form-control" id="phone">
+                                <button type="submit" class="btn btn-default but-sub"><?php echo $lang_send_link; ?></button>
                             </div>
                         </form>
                     </div>
+
                 </div>
                 <div class="col-lg-6">
                     <div class="img-last-home">
-                        <img src="<?php echo base_url();?>assets/img/home/hand.png" class="img-responsive hand-img hvr-grow" alt=""/>
+                        <img src="<?php echo base_url();?>assets/img/home/hand.png" class="img-responsive hand-img hvr-grow"  alt=""/>
                     </div>
+
                 </div>
             </div>
+
+
         </div>
     </div>
+
 </div>
+
 
 <div class="book-scn-tab">
     <div class="book-now-option">
         <h3> <img src="<?php echo base_url();?>assets/img/home/pop.png" /></h3>
         <div class="vector-part">
-            <div class="sym-up"></div>
+            <div class="sym-up">
+
+            </div>
             <h3><?php echo $lang_book_now; ?></h3>
         </div>
     </div>
@@ -157,7 +164,9 @@ $get_settings=getsettingsdetails();
             <div class="bk-option-down">
                 <h3> <img src="<?php echo base_url();?>assets/img/home/pop.png" /></h3>
                 <div class="vector-part">
-                    <div class="sym-up-1"></div>
+                    <div class="sym-up-1">
+
+                    </div>
                     <h3><?php echo $lang_book_now; ?></h3>
                 </div>
             </div>
@@ -216,11 +225,13 @@ $get_settings=getsettingsdetails();
                                             </a>
                                         </li>
                                     </ul>
+
                                 </div>
                                 <div class="col-lg-3"></div>
                             </div>
-							<form name="myForm" id="myForm">
+							 <form name="myForm" id="myForm">
                             <div class="tab-content">
+							
                                 <div id="homes" class="tab-pane fade in active">
                                     <div class="row">
                                         <div class="col-lg-3"></div>
@@ -231,14 +242,15 @@ $get_settings=getsettingsdetails();
                                                         <div class="col-lg-4">
                                                             <div class="form-group">
                                                                 <label for="exampleInputPassword1"><?php echo $lang_pickup_area; ?></label>
-                                                                <input type="text" class="form-control first pickup_areas" name="pickup_area" placeholder="Street, Town" id="autocomplete" autocomplete="on" onClick="initialize(this.id);">
+                                                                <input type="text" class="form-control first pickup_areas"   name="pickup_area" placeholder="Street, Town" id="autocomplete" autocomplete="on" onClick="initialize(this.id);">
                                                             </div>
                                                         </div>
 							<input type='hidden' name="driver_lat" id="driver_lat">
 						    <input type='hidden' name="driver_lng" id="driver_lng">
-							<input type='hidden' name="drop_lat" id="drop_lat">
+							 <input type='hidden' name="drop_lat" id="drop_lat">
 						    <input type='hidden' name="drop_lng" id="drop_lng">
-							<input type='hidden' value="Point to Point Transfer" name="purpose" id="purpose"> 
+							 <input type='hidden' value="Point to Point Transfer" name="purpose" id="purpose">
+							 
                                                         <div class="col-lg-4">
                                                             <div class="form-group">
                                                                 <label for="exampleInputPassword1"><?php echo $lang_pickup_date; ?> </label>
@@ -1037,10 +1049,15 @@ $get_settings=getsettingsdetails();
 
     </div>
 </div>
-<div class="container">
+ 
+
+
+ <div class="container">
     <div class="modal fade" id="myModalwallet" role="dialog">
         <div class="modal-dialog">
+
             <div class="row">
+
                 <div class="col-lg-12">
                     <div class="modal-content call-back-model-content">
                         <div class="modal-header">

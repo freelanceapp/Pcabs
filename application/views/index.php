@@ -101,7 +101,7 @@
                     <img src="<?php echo base_url();?>img/home/t-1.png" class="img-t hvr-grow" />
                     <h3>Call us 24 hours available</h3>
                     <h2>800 666 7777</h2>
-                    <p>PCab is a taxi and cab service provider across India, we provide the most convenient and affordable taxi services in just a mouse click. Our cabs will be at your door steps within short time and this would save you from calling multiple cab companies for checking cab availability. We promise you a safer and affordable trip, experience an amazing journey at a smarter price.</p>
+                    <p>Call My Cab is a taxi and cab service provider across India, we provide the most convenient and affordable taxi services in just a mouse click. Our cabs will be at your door steps within short time and this would save you from calling multiple cab companies for checking cab availability. We promise you a safer and affordable trip, experience an amazing journey at a smarter price.</p>
 
                 </div>
             </div>
@@ -121,9 +121,9 @@
                 <div class="col-lg-5 ">
                     <div class="hand-section">
                         <h3>It's New and It's Everywhere!</h3>
-                        <p>India’s quickest and most amazing and affordable way to book and track a cab is here. Download our free PCab app now and make the most convenient and amazing cab service in your pockets, Be taxi ready always.</p>
+                        <p>India’s quickest and most amazing and affordable way to book and track a cab is here. Download our free Call My Cab app now and make the most convenient and amazing cab service in your pockets, Be taxi ready always.</p>
                         <img src="<?php echo base_url();?>img/home/p-1.png"/>
-                        <h4>Get PCab on your mobile.</h4>
+                        <h4>Get Call My Cab on your mobile.</h4>
                         <form>
                             <div class="form-group col-lg-6" style="padding: 0;">
                                 <input type="text" class="form-control" id="phone">

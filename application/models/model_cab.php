@@ -32,7 +32,7 @@ function cmc_sms($mob_no,$msg)
 
        // to replace the space in message with  ‘%20’
 
-       $url="http://mysms.sterlinginfosis.com/api/mt/SendSMS?user=".$user."&password=".$pwd."&senderid=".$sender_id."&channel=trans&DCS=0&flashsms=0&number=91".$mob_no."&text=".$str.;
+       $url="http://api.smsgatewayhub.com/smsapi/pushsms.aspx?user=".$user."&pwd=".$pwd."&to=91".$mob_no."&sid=".$sender_id."&msg=".$str."&fl=0&gwid=2";
 
        // create a new cURL resource
 
@@ -120,7 +120,7 @@ function cmc_sms($mob_no,$msg)
 
 					  if($communication1 == 'sms'){
 
-						$sms="Your PCab verification code is ".$code." ";
+						$sms="Your Call MY Cab verification code is ".$code." ";
 
 						$this->Model_cab->cmc_sms($smobile,$sms);
 
@@ -130,7 +130,7 @@ function cmc_sms($mob_no,$msg)
 
 						$name=$row3->title;
 
-						$msg="Your PCab verification code is ".$code."";
+						$msg="Your Call MY Cab verification code is ".$code."";
 
 						$sub="Verification Code";
 
@@ -230,7 +230,7 @@ function cmc_sms($mob_no,$msg)
 
 						  if($communication1 == 'sms'){
 
-							  $sms="Your PCab verification code is ".$code." ";
+							  $sms="Your Call MY Cab verification code is ".$code." ";
 
 							  $this->Model_cab->cmc_sms($smobile,$sms);
 
@@ -240,7 +240,7 @@ function cmc_sms($mob_no,$msg)
 
 							 $name=$row3->title;
 
-						     $msg="Your PCab verification code is ".$code."";
+						     $msg="Your Call MY Cab verification code is ".$code."";
 
                              $sub="Verification Code";
 
@@ -428,7 +428,7 @@ function cmc_sms($mob_no,$msg)
 
 					    if($communication1 == 'sms'){
 
-						$sms="Your PCab verification code is ".$code." ";
+						$sms="Your Call MY Cab verification code is ".$code." ";
 
 						$this->Model_cab->cmc_sms($smobile,$sms);
 
@@ -438,7 +438,7 @@ function cmc_sms($mob_no,$msg)
 
 						$name=$row3->title;
 
-						$msg="Your PCab verification code is ".$code."";
+						$msg="Your Call MY Cab verification code is ".$code."";
 
 						$sub="Verification Code";
 
@@ -540,7 +540,7 @@ function cmc_sms($mob_no,$msg)
 
 						  if($communication1 == 'sms'){
 
-							  $sms="Your PCab verification code is ".$code." ";
+							  $sms="Your Call MY Cab verification code is ".$code." ";
 
 							  $this->Model_cab->cmc_sms($smobile,$sms);
 
@@ -550,7 +550,7 @@ function cmc_sms($mob_no,$msg)
 
 							 $name=$row3->title;
 
-						     $msg="Your PCab verification code is ".$code."";
+						     $msg="Your Call MY Cab verification code is ".$code."";
 
                              $sub="Verification Code";
 
@@ -664,7 +664,7 @@ unset($data['sign_show']);
 				$verification = $row3->verification;
 				if($verification == 'on'){
 				if($communication1 == 'sms'){
-				$sms="Your PCab verification code is ".$code." ";
+				$sms="Your Call MY Cab verification code is ".$code." ";
 				$this->Model_cab->cmc_sms($smobile,$sms);
 				}else{
 				$from= $row3->smtp_username;
@@ -681,7 +681,7 @@ unset($data['sign_show']);
      <div style="background:#fff;  float:left; width:96.3%;   border-top-right-radius: 8px; border-top-left-radius: 8px; padding:15px 12px 0 12px;  ">
     		<div style="width:100%; padding:10px 0 10px 0; float:left; color:#666261; font-size:14px; text-align:center;">Thank you for choosing our service. We are happy to serve you!!!</div>
                  <div style="width:100%; float:left; padding:15px 0 15px 0; border-bottom:solid #cdcdcd 1px; border-top:solid #cdcdcd 1px;"> 
-                 <div style="width:100%; float:left; font-size:14px; text-align:center;">Your PCab verification code is'.$code.'</div>
+                 <div style="width:100%; float:left; font-size:14px; text-align:center;">Your Call MY Cab verification code is'.$code.'</div>
             </div>
         </div></div>
         <div style="background:#fff;  float:left; width:96.3%;    border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; padding:20px 12px 20px 12px;  "></div>
@@ -791,7 +791,7 @@ unset($data['sign_show']);
 
 						  if($communication1 == 'sms'){
 
-							  $sms="Your PfCab verification code is ".$code." ";
+							  $sms="Your Call MY Cab verification code is ".$code." ";
 
 							  $this->Model_cab->cmc_sms($smobile,$sms);
 
@@ -810,7 +810,7 @@ unset($data['sign_show']);
      <div style="background:#fff;  float:left; width:96.3%;   border-top-right-radius: 8px; border-top-left-radius: 8px; padding:15px 12px 0 12px;  ">
     		<div style="width:100%; padding:10px 0 10px 0; float:left; color:#666261; font-size:14px; text-align:center;">Thank you for choosing our service. We are happy to serve you!!!</div>
                  <div style="width:100%; float:left; padding:15px 0 15px 0; border-bottom:solid #cdcdcd 1px; border-top:solid #cdcdcd 1px;"> 
-                 <div style="width:100%; float:left; font-size:14px; text-align:center;">Your PCab verification code is'.$code.'</div>
+                 <div style="width:100%; float:left; font-size:14px; text-align:center;">Your Call MY Cab verification code is'.$code.'</div>
             </div>
         </div></div>
         <div style="background:#fff;  float:left; width:96.3%;    border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; padding:20px 12px 20px 12px;  "></div>
@@ -2910,7 +2910,7 @@ function update_resend_otp($data){
 
 					  $code = $data['active_id'];
 
-					  $sms="Your PCab verification code is ".$code." ";
+					  $sms="Your Call MY Cab verification code is ".$code." ";
 
         $this->Model_cab->cmc_sms($smobile,$sms);
 

@@ -60,7 +60,7 @@ class Wallet extends CI_Controller {
 
         $this->paypal_lib->add_field('notify_url', $notifyURL);
 
-        $this->paypal_lib->add_field('item_name', "PCab Wallet");
+        $this->paypal_lib->add_field('item_name', "Call My Cab Wallet");
 
         $this->paypal_lib->add_field('custom', $amount_org);
 

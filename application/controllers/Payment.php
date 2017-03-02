@@ -129,7 +129,7 @@ class Payment extends CI_Controller {
 
 		
 
-		$desc = 'Payment of PCab Unique ID:'.$book->uneaque_id;
+		$desc = 'Payment of call My Cab Unique ID:'.$book->uneaque_id;
 
 		$auth_net = array(
 			'x_card_num'			=> $info->card_no, //'4111111111111111', // Visa
@@ -138,7 +138,7 @@ class Payment extends CI_Controller {
 			'x_description'			=> $desc,
 			'x_amount'				=> $amount,
 			'x_first_name'			=> $user->username,
-			'x_last_name'			=> 'PCab',
+			'x_last_name'			=> 'Call My Cab',
 			'x_address'				=> '',
 			'x_city'				=> '',
 			'x_state'				=> 'location',

@@ -411,7 +411,7 @@ function delete_table($table, $where_data){
 		return $this->db->insert($table, $insert_data);
 	}
 	
-	/*Web services for Pcab driver App ****Edited by shajeer*/
+	/*Web services for call my cab driver App ****Edited by shajeer*/
 function driver_login($request)
 {
        $table = 'driver_details';	

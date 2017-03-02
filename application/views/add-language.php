@@ -444,8 +444,8 @@
                                            <input class="form-control regcom" placeholder="Show" name="lang_show"  type="text" >
                                         </div>
 										 <div class="form-group">
-                                            <label>New to PCab</label>
-                                           <input class="form-control regcom" placeholder="New to PCab" name="lang_new_pcab"   type="text" >
+                                            <label>New to Call My Cab</label>
+                                           <input class="form-control regcom" placeholder="New to Call My Cab" name="lang_new_pcab"   type="text" >
                                         </div>
 										 <div class="form-group">
                                             <label>Signup Now</label>
@@ -613,8 +613,8 @@
                                            <input class="form-control regcom" placeholder="Refil Your Wallet" name="lang_refill_wallet"   type="text" >
                                         </div>
 										<div class="form-group">
-                                            <label>Get PCab on your mobile</label>
-                                           <input class="form-control regcom" placeholder="Get PCab on your mobile" name="lang_get_mobile"   type="text" >
+                                            <label>Get Call My Cab on your mobile</label>
+                                           <input class="form-control regcom" placeholder="Get Call My Cab on your mobile" name="lang_get_mobile"   type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Send me the link</label>
