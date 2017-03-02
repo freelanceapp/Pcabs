@@ -317,35 +317,35 @@
                                         </div>
 										<div class="form-group">
                                             <label>Error in Updation</label>
-                                           <input class="form-control regcom" placeholder="Error in Updation" name="lang_error_updatn"   type="text" >
+                                           <input class="form-control regcom" placeholder="Error in Updation" name="lang_error_updatn" value="<?php echo $lang_error_updatn; ?>"  type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Successfully Updated</label>
-                                           <input class="form-control regcom" placeholder="Successfully Updated" name="lang_success_updated"   type="text" >
+                                           <input class="form-control regcom" placeholder="Successfully Updated" name="lang_success_updated" value="<?php echo $lang_success_updated; ?>" type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Night</label>
-                                           <input class="form-control regcom" placeholder="Night" name="lang_night"   type="text" >
+                                           <input class="form-control regcom" placeholder="Night" name="lang_night" value="<?php echo $lang_night; ?>"  type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Day</label>
-                                           <input class="form-control regcom" placeholder="Day" name="lang_day"   type="text" >
+                                           <input class="form-control regcom" placeholder="Day" name="lang_day" value="<?php echo $lang_day; ?>"  type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Mail has been send successfully</label>
-                                           <input class="form-control regcom" placeholder="Mail has been send successfully" name="lang_mail_send"   type="text" >
+                                           <input class="form-control regcom" placeholder="Mail has been send successfully" name="lang_mail_send" value="<?php echo $lang_mail_send; ?>"  type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Error in submission</label>
-                                           <input class="form-control regcom" placeholder="Error in submission" name="lang_error_submission"   type="text" >
+                                           <input class="form-control regcom" placeholder="Error in submission" name="lang_error_submission" value="<?php echo $lang_error_submission; ?>"  type="text" >
                                         </div>
 											<div class="form-group">
                                             <label>or</label>
-                                           <input class="form-control regcom" placeholder="or" name="lang_or"   type="text" >
+                                           <input class="form-control regcom" placeholder="or" name="lang_or" value="<?php echo $lang_or; ?>"  type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>contact us by sending us mail on</label>
-                                           <input class="form-control regcom" placeholder="contact us by sending us mail on" name="lang_contact_mail"   type="text" >
+                                           <input class="form-control regcom" placeholder="contact us by sending us mail on" name="lang_contact_mail" value="<?php echo $lang_contact_mail; ?>"  type="text" >
                                         </div>
 											<div class="form-group">
                                             <label>eg</label>
@@ -470,8 +470,8 @@
                                            <input class="form-control regcom" placeholder="Show" name="lang_show" value="<?php echo $lang_show; ?>" type="text" >
                                         </div>
 										 <div class="form-group">
-                                            <label>New to Call My Cab</label>
-                                           <input class="form-control regcom" placeholder="New to Call My Cab" name="lang_new_pcab" value="<?php echo $lang_new_pcab; ?>" type="text" >
+                                            <label>New to PCab</label>
+                                           <input class="form-control regcom" placeholder="New to PCab" name="lang_new_pcab" value="<?php echo $lang_new_pcab; ?>" type="text" >
                                         </div>
 										 <div class="form-group">
                                             <label>Signup Now</label>
@@ -639,8 +639,8 @@
                                            <input class="form-control regcom" placeholder="Refil Your Wallet" name="lang_refill_wallet" value="<?php echo $lang_refill_wallet; ?>" type="text" >
                                         </div>
 										<div class="form-group">
-                                            <label>Get Call My Cab on your mobile</label>
-                                           <input class="form-control regcom" placeholder="Get Call My Cab on your mobile" name="lang_get_mobile" value="<?php echo $lang_get_mobile; ?>" type="text" >
+                                            <label>Get PCab on your mobile</label>
+                                           <input class="form-control regcom" placeholder="Get PCab on your mobile" name="lang_get_mobile" value="<?php echo $lang_get_mobile; ?>" type="text" >
                                         </div>
 										<div class="form-group">
                                             <label>Send me the link</label>

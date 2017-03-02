@@ -55,7 +55,7 @@
                                       <h6><?php echo $lang_contact_address; ?></h6>
                                       <h6> <?php echo $lang_or; ?> </h6>
                                       <h6><?php echo $lang_contact_mail; ?> </h6>
-                                      <a href=""> mail@techware.in</a>
+                                      <a href=""> cab.pcab@gmail.com</a>
                                   </div>
                                 </div>
 

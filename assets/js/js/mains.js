@@ -2255,7 +2255,7 @@ function check_promo(promo_code,fields,promo_field){
 	 	$('#signin-password').attr('type','password');
 	 } 
 	 
- })
+ });
 
   $('#sign_show').on('click',function(){
 	 if($(this).is(':checked')){
@@ -2264,7 +2264,6 @@ function check_promo(promo_code,fields,promo_field){
 	 	$('#signup-password').attr('type','password');
 	 } 
 	 
- })
-
+ });
  
 
