@@ -272,8 +272,11 @@ function pointupdate($data){
 </div>';
 	
 	$this->home->send_mail($from,$name,$email,$sub,$mailTemplate);
-	
-	
+	$this->load->model('model_cab');
+
+		$mob_no = $row->mobile;
+		$mess="Your booking ".$bookid." has been confirmed driver details:".$row1->name." ".$row1->phone;
+		$this->model_cab->cmc_sms($mob_no,$mess);
 	$email1= $row1->email;
 	$sub1="Passenger Details";
 	

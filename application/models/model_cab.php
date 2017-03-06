@@ -2657,7 +2657,7 @@ $config['protocol'] = 'smtp';
 $config['smtp_host'] = $host;
 $config['smtp_user'] = $username;
 $config['smtp_pass'] = $pass;
-$config['smtp_port'] = 25;
+$config['smtp_port'] = 465;
 $config['mailtype'] = 'html';
 
 $this->email->initialize($config);

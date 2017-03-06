@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+error_reporting(E_ALL); ini_set('display_errors', 1);
   // Allow from any origin
 	if (isset($_SERVER['HTTP_ORIGIN'])) {
         header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
@@ -302,7 +302,7 @@ class web_service extends CI_Controller
 		print json_encode( $finresult );
 	}
 	
-  public function book_cab(){
+  	public function book_cab(){
 		
 		$postdata = file_get_contents("php://input");
 		$request = json_decode($postdata);
@@ -617,13 +617,18 @@ class web_service extends CI_Controller
 			}
 		}
 		
-		  public function fetchUserAppLanguage(){
+		public function fetchUserAppLanguage(){
 			$this->db->select('language_meta');
 			$this->db->where('status','1');
 			$query  = $this->db->get('user_app_language');
 			$result = $query->row();
 			if(count($result)){
-				echo  $result->language_meta;
+				
+				$distance = "ETA ".rand(1, 20)." mins";
+				$language_meta = json_decode($result->language_meta, TRUE);
+				$language_meta['Toyota_etios_tata_indigo_maruti_dezire'] = $distance;
+				echo json_encode($language_meta);
+				
 			}else{
 				echo "No data";
 			}
