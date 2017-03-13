@@ -308,8 +308,11 @@ class model_web_service extends CI_Model{
 	 	$table = "bookingdetails";
 
 	 	$update_data = array(
-	 		'uneaque_id' => $unique_id,
 	 		'status' => 'Cancelled'
+	 	);
+
+	 	$where_data = array(
+	 		'uneaque_id' => $unique_id
 	 	);
 
 	 	//check for trip completion
@@ -326,7 +329,7 @@ class model_web_service extends CI_Model{
 		}
 		else
 		{
-			$this->update_data($update_data,$table);
+			$this->update_table_where($update_data,$where_data,$table);
 			return true;
 		}
 	 }

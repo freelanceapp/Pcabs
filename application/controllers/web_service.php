@@ -1,5 +1,4 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-error_reporting(E_ALL); ini_set('display_errors', 1);
   // Allow from any origin
 	if (isset($_SERVER['HTTP_ORIGIN'])) {
         header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
@@ -330,12 +329,12 @@ class web_service extends CI_Controller
 		$this->model_web_service->book($request);
 	}
 
-	public function cancel_ride()
+	public function cancelride()
 	{
 		$postdata = file_get_contents("php://input");
 		$request = json_decode($postdata);
 
-		$unique_id = $request->unique_id
+		$unique_id = $request->uniqueid;
 		$result = $this->model_web_service->cancel_ride($unique_id);
 
 		if($result)
