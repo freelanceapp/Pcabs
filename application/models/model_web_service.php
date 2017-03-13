@@ -303,6 +303,34 @@ class model_web_service extends CI_Model{
 			print json_encode($finresult);								
 	 }
 
+	 function cancel_ride($unique_id)
+	 {
+	 	$table = "bookingdetails";
+
+	 	$update_data = array(
+	 		'uneaque_id' => $unique_id,
+	 		'status' => 'Cancelled'
+	 	);
+
+	 	//check for trip completion
+	 	$this->db->select();
+	 	$this->db->where('uneaque_id',$unique_id);
+	 	$this->db->where('status', 'Booking');
+
+	 	$query  = $this->db->get($table);
+		$result = $query->result_array(); 
+		
+		if(is_null($result))
+		{
+			return false;
+		}
+		else
+		{
+			$this->update_data($update_data,$table);
+			return true;
+		}
+	 }
+
    	
  
  /* ------------------- COMMON --------------------------------------------------------

@@ -329,6 +329,26 @@ class web_service extends CI_Controller
 		var_dump($request );
 		$this->model_web_service->book($request);
 	}
+
+	public function cancel_ride()
+	{
+		$postdata = file_get_contents("php://input");
+		$request = json_decode($postdata);
+
+		$unique_id = $request->unique_id
+		$result = $this->model_web_service->cancel_ride($unique_id);
+
+		if($result)
+		{
+			$response->status = true;
+			echo json_encode($response);
+		}
+		else
+		{
+			$response->status = false;
+			echo json_encode($response);
+		}
+	}
 	
 	function token_gen($item){
 		
